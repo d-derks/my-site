@@ -1,0 +1,129 @@
+/* base styles *
+
+-------------------------------------- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/**
+ * Body
+ */
+
+body {
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    text-align: left;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    background-color: #16181f;
+
+}
+
+
+/**
+ * Headlines
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: 400;
+}
+
+/**
+ * General Text Formattings
+ */
+
+span,
+p {
+    margin: 0;
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+ol,
+ul,
+dl,
+li,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/**
+ * Form
+ */
+
+fieldset {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+legend {
+    padding: 0;
+}
+
+input,
+select,
+textarea {
+    border: none;
+}
+
+
+/**
+ * Images
+ */
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/**
+ * Buttons
+ */
+
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+button,
+a {
+    @include button-reset;
+}
