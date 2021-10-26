@@ -4,17 +4,18 @@ import './index.scss';
 import reportWebVitals from './reportWebVitals';
 import BaseLayout from "./BaseLayout";
 import styles from './styles/page.module.scss';
+import Stage from "./blocks/stage/Stage";
+import StageIntro from "./blocks/stage/stageIntro/stageIntro";
 
 ReactDOM.render(
   <React.StrictMode>
     <BaseLayout>
-        <div className={styles.section} style={{minHeight: '100%'}}>
-            <div className={styles.sectionInner} style={{minHeight: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
-                <h1 style={{margin: 'auto'}}>
-                    Stage
-                </h1>
-            </div>
-        </div>
+        <Stage>
+            <StageIntro
+                title="I AM"
+                text="a frontend developer from Kreuzberg"
+            />
+        </Stage>
         <div className={`${styles.section} ${styles.isBgBright}`} style={{minHeight: '100%'}}>
             <div className={styles.sectionInner} style={{minHeight: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
                 <h2 className="u_mb-1" style={{margin: 'auto'}}>
