@@ -1,0 +1,46 @@
+/* stage intro *
+
+-------------------------------------- */
+@import '../../../../styles/resources/variables';
+
+.host {
+    width: 100%;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+}
+
+.titleText {
+    display: inline-block;
+    font-size: clamp(1.8rem, 2.6vw, 3rem);
+    color: $color-05;
+
+    &:not(.isSizeXl) {
+        width: 100%;
+    }
+}
+
+.isSizeXl {
+    position: relative;
+    font-size: clamp(14rem, 20vw, 24rem);
+    text-transform: uppercase;
+    line-height: 0.9;
+    font-weight: 900;
+    color: $color-01;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: -0.3em;
+        left: 0;
+        margin: auto;
+        width: 100%;
+        height: 0.15em;
+        background-color: $color-05;
+        z-index: 20;
+    }
+}
