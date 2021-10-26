@@ -1,0 +1,28 @@
+/* page *
+
+-------------------------------------- */
+
+@import 'src/styles/resources/variables';
+
+.main {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+}
+
+.section {
+    position: relative;
+    scroll-snap-align: center;
+    width: 100%;
+    padding: 0 1.6rem;
+}
+
+.sectionInner {
+    width: 100%;
+    max-width: $max-width-page;
+    margin: auto;
+}
+
+.isBgBright {
+    background-color: $color-01;
+}
