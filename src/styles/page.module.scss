@@ -14,13 +14,22 @@
     position: relative;
     scroll-snap-align: center;
     width: 100%;
-    padding: 0 1.6rem;
+
+    &:not(.isFullWidth) {
+        padding: 0 1.6rem;
+    }
 }
 
 .sectionInner {
     width: 100%;
     max-width: $max-width-page;
     margin: auto;
+}
+
+.isMaxWidthL {
+    .sectionInner {
+        max-width: $max-width-page-l;
+    }
 }
 
 .isBgBright {
