@@ -4,8 +4,8 @@ import './index.scss';
 import reportWebVitals from './reportWebVitals';
 import BaseLayout from "./BaseLayout";
 import styles from './styles/page.module.scss';
-import Stage from "./blocks/stage/Stage";
-import StageIntro from "./blocks/stage/stageIntro/stageIntro";
+import Stage from "./components/blocks/stage/Stage";
+import StageIntro from "./components/blocks/stage/stageIntro/StageIntro";
 
 ReactDOM.render(
   <React.StrictMode>
