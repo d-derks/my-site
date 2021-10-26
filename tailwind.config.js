@@ -1,8 +1,9 @@
 module.exports = {
   important: true,
-  prefix: '',
+  prefix: 'u_',
   purge: [
-    './components/**/*.js',
+    './src/components/**/*.{js,ts,jsx,tsx}',
+    './src/index.js'
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
