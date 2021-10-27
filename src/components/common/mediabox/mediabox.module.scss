@@ -1,0 +1,61 @@
+/* mediabox *
+
+-------------------------------------- */
+
+@import '../../../styles/resources/mixins/index';
+
+.host {
+    --mediabox-color-01: #f3f3f3;
+
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: var(--mediabox-color-01);
+
+    // responsive ratio box, padding-bottom to after element modifier
+
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    &.isRatio_1_1 {
+        &::after {
+            padding-bottom: 100%;
+        }
+    }
+
+    &.isRatio_2_1 {
+        &::after {
+            padding-bottom: 50%;
+        }
+    }
+
+    &.isRatio_16_7 {
+        &::after {
+            padding-bottom: 43.75%;
+        }
+    }
+
+    // ratio video
+
+    &.isRatio_16_10 {
+        &::after {
+            padding-bottom: 56.25%;
+        }
+    }
+}
+
+.media {
+    @include centerering;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
