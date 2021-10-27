@@ -1,130 +1,168 @@
 /* base styles *
 
 -------------------------------------- */
+
 @import "resources/mixins/index";
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+@layer base {
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    #root {
+        width: 100%;
+        height: 100%;
+    }
+
+    html {
+        font-size: 62.5%;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    /**
+     * Body
+     */
+
+    body {
+        overflow-x: hidden;
+        height: 100%;
+        margin: 0;
+        font-family: 'Lato', sans-serif;;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 2.2rem;
+        text-align: left;
+        text-rendering: optimizeLegibility;
+        text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        scroll-behavior: smooth;
+        background-color: var(--page-color);
+    }
+
+
+    /**
+     * Headlines
+     */
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+        font-weight: 400;
+    }
+
+    /**
+     * General Text Formattings
+     */
+
+    span,
+    p {
+        margin: 0;
+    }
+
+    b,
+    strong {
+        font-weight: 700;
+    }
+
+    ol,
+    ul,
+    dl,
+    li,
+    dd {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    /**
+     * Form
+     */
+
+    fieldset {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        border: none;
+        padding: 0;
+    }
+
+    legend {
+        padding: 0;
+    }
+
+    input,
+    select,
+    textarea {
+        border: none;
+    }
+
+
+    /**
+     * Images
+     */
+
+    img {
+        display: block;
+        max-width: 100%;
+    }
+
+
+    /**
+     * Buttons
+     */
+
+    button::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+
+    button,
+    a {
+        @include button-reset;
+    }
+
+    /* lato-300 - latin */
+    @font-face {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        src: local(''),
+        url('./public/fonts/lato-v20-latin-300.woff2') format('woff2');
+    }
+    /* lato-regular - latin */
+    @font-face {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        src: local(''),
+        url('./public/fonts/lato-v20-latin-regular.woff2') format('woff2');
+    }
+    /* lato-700 - latin */
+    @font-face {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        src: local(''),
+        url('./public/fonts/lato-v20-latin-700.woff2') format('woff2');
+
+    }
+    /* lato-900 - latin */
+    @font-face {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 900;
+        src: local(''),
+        url('./public/fonts/lato-v20-latin-900.woff2') format('woff2');
+    }
 }
 
-#root {
-    width: 100%;
-    height: 100%;
-}
-
-html {
-    font-size: 62.5%;
-    font-family: 'Noto Sans JP', sans-serif;
-}
-
-/**
- * Body
- */
-
-body {
-    overflow-x: hidden;
-    height: 100%;
-    margin: 0;
-    font-family: 'Lato', sans-serif;;
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 2.2rem;
-    text-align: left;
-    text-rendering: optimizeLegibility;
-    text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    scroll-behavior: smooth;
-    background-color: var(--page-color);
-}
-
-
-/**
- * Headlines
- */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-    font-weight: 400;
-}
-
-/**
- * General Text Formattings
- */
-
-span,
-p {
-    margin: 0;
-}
-
-b,
-strong {
-    font-weight: 700;
-}
-
-ol,
-ul,
-dl,
-li,
-dd {
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    list-style: none;
-}
-
-/**
- * Form
- */
-
-fieldset {
-    position: relative;
-    width: 100%;
-    margin: 0;
-    border: none;
-    padding: 0;
-}
-
-legend {
-    padding: 0;
-}
-
-input,
-select,
-textarea {
-    border: none;
-}
-
-
-/**
- * Images
- */
-
-img {
-    display: block;
-    max-width: 100%;
-}
-
-
-/**
- * Buttons
- */
-
-button::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-}
-
-button,
-a {
-    @include button-reset;
-}

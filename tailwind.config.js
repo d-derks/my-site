@@ -3,7 +3,8 @@ module.exports = {
   prefix: 'u_',
   purge: [
     './src/components/**/*.{js,ts,jsx,tsx}',
-    './src/index.js'
+    './src/index.js',
+    './public/index.html',
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
