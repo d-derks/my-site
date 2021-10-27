@@ -18,7 +18,6 @@
 
     html {
         font-size: 62.5%;
-        font-family: 'Noto Sans JP', sans-serif;
     }
 
     /**
@@ -129,40 +128,6 @@
     button,
     a {
         @include button-reset;
-    }
-
-    /* lato-300 - latin */
-    @font-face {
-        font-family: 'Lato';
-        font-style: normal;
-        font-weight: 300;
-        src: local(''),
-        url('./public/fonts/lato-v20-latin-300.woff2') format('woff2');
-    }
-    /* lato-regular - latin */
-    @font-face {
-        font-family: 'Lato';
-        font-style: normal;
-        font-weight: 400;
-        src: local(''),
-        url('./public/fonts/lato-v20-latin-regular.woff2') format('woff2');
-    }
-    /* lato-700 - latin */
-    @font-face {
-        font-family: 'Lato';
-        font-style: normal;
-        font-weight: 700;
-        src: local(''),
-        url('./public/fonts/lato-v20-latin-700.woff2') format('woff2');
-
-    }
-    /* lato-900 - latin */
-    @font-face {
-        font-family: 'Lato';
-        font-style: normal;
-        font-weight: 900;
-        src: local(''),
-        url('./public/fonts/lato-v20-latin-900.woff2') format('woff2');
     }
 }
 
