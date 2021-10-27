@@ -2,8 +2,8 @@
 
 $color-01: #f1f1f1;
 $color-02: #16181f;
-//$color-03: ;
-//$color-03: ;
+$color-03: #1b91ff;
+$color-04: #673ab7;
 //$color-04: ;
 $color-05: #66fcf1;
 
@@ -11,7 +11,3 @@ $color-05: #66fcf1;
 
 $max-width-page: 118rem;
 $max-width-page-l: 140rem;
-
-:root {
-    --page-color: #{$color-02};
-}
