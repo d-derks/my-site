@@ -14,8 +14,8 @@
 
 .titleText {
     display: inline-block;
-    font-size: clamp(1.8rem, 2.6vw, 3rem);
-    color: $color-03;
+    font-size: clamp(1.8rem, 3.4vw, 4rem);
+    color: $color-07;
 
     &:not(.isSizeXl) {
         width: 100%;
@@ -24,7 +24,7 @@
 
 .isSizeXl {
     position: relative;
-    font-size: clamp(14rem, 20vw, 24rem);
+    font-size: clamp(14rem, 28vw, 30rem);
     text-transform: uppercase;
     line-height: 0.9;
     font-weight: 900;
@@ -40,7 +40,7 @@
         margin: auto;
         width: 100%;
         height: 0.15em;
-        background-color: $color-04;
+        background-color: $color-06;
         z-index: 20;
     }
 }
