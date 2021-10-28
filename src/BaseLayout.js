@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './styles/page.module.scss';
 import PageHeader from "./components/pageHeader/PageHeader";
 
 function BaseLayout({children}) {
     return (
         <>
             <PageHeader/>
-            <main className={styles.main}>
+            <main>
                 {children}
             </main>
             <footer style={{minHeight: '100vh'}}>
