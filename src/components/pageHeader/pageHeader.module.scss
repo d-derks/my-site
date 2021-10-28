@@ -24,9 +24,10 @@
 
     &.isMenuVisible {
         z-index: 100;
+
         &::after {
             clip-path: circle(120vh at 50% 50%);
-            transition: all 380ms ease;
+            transition: clip-path 330ms ease;
         }
     }
 }
