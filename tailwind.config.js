@@ -26,6 +26,11 @@ module.exports = {
       13: '13rem',
       14: '14rem',
       15: '15rem',
+      16: '16rem',
+      17: '17rem',
+      18: '18rem',
+      19: '19rem',
+      20: '20rem',
     },
     screens: {
       xsmall: { max: '349px' },
@@ -56,6 +61,7 @@ module.exports = {
     'visibility',
     'width',
     'height',
+    'maxWidth',
     'overflow',
   ],
 };
