@@ -41,6 +41,11 @@
         background-color: var(--page-color);
     }
 
+    main {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        scroll-snap-type: y mandatory;
+    }
 
     /**
      * Headlines
